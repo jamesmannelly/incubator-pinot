@@ -622,7 +622,7 @@ public class PinotTableRestletResource {
     } catch (Exception e) {
       throw new ControllerApplicationException(LOGGER,
           String.format("Failed to get status (ingestion status) for table %s. Reason: %s", tableName, e.getMessage()),
-          Response.Status.INTERNAL_SERVER_ERROR, e);
+          Response.Status.INTERNAL_SERVER_ERROR, e); 
     }
   }
 }
